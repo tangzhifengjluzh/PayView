@@ -12,6 +12,12 @@
 		040D088221CC961600E8338B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040D088021CC961600E8338B /* Main.storyboard */; };
 		040D088421CC963100E8338B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040D088321CC963100E8338B /* Assets.xcassets */; };
 		040D088721CC963100E8338B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040D088521CC963100E8338B /* LaunchScreen.storyboard */; };
+		040D089221CC965E00E8338B /* RRPayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D088F21CC965E00E8338B /* RRPayCell.swift */; };
+		040D089321CC965E00E8338B /* RRPayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040D089021CC965E00E8338B /* RRPayCell.xib */; };
+		040D089421CC965E00E8338B /* RRPayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D089121CC965E00E8338B /* RRPayView.swift */; };
+		040D089C21CC969E00E8338B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 040D089721CC969E00E8338B /* LICENSE */; };
+		040D089D21CC969E00E8338B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 040D089821CC969E00E8338B /* README.md */; };
+		040D089E21CC969E00E8338B /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D089B21CC969E00E8338B /* Then.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		040D088321CC963100E8338B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040D088621CC963100E8338B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040D088821CC963100E8338B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040D088F21CC965E00E8338B /* RRPayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRPayCell.swift; sourceTree = "<group>"; };
+		040D089021CC965E00E8338B /* RRPayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRPayCell.xib; sourceTree = "<group>"; };
+		040D089121CC965E00E8338B /* RRPayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRPayView.swift; sourceTree = "<group>"; };
+		040D089721CC969E00E8338B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		040D089821CC969E00E8338B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		040D089B21CC969E00E8338B /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 		040D087B21CC961500E8338B /* PayView */ = {
 			isa = PBXGroup;
 			children = (
+				040D089521CC969000E8338B /* vender */,
+				040D088E21CC965E00E8338B /* 支付 */,
 				040D087C21CC961600E8338B /* AppDelegate.swift */,
 				040D087E21CC961600E8338B /* ViewController.swift */,
 				040D088021CC961600E8338B /* Main.storyboard */,
@@ -62,6 +76,50 @@
 				040D088821CC963100E8338B /* Info.plist */,
 			);
 			path = PayView;
+			sourceTree = "<group>";
+		};
+		040D088E21CC965E00E8338B /* 支付 */ = {
+			isa = PBXGroup;
+			children = (
+				040D088F21CC965E00E8338B /* RRPayCell.swift */,
+				040D089021CC965E00E8338B /* RRPayCell.xib */,
+				040D089121CC965E00E8338B /* RRPayView.swift */,
+			);
+			path = "支付";
+			sourceTree = "<group>";
+		};
+		040D089521CC969000E8338B /* vender */ = {
+			isa = PBXGroup;
+			children = (
+				040D089621CC969E00E8338B /* Then */,
+			);
+			path = vender;
+			sourceTree = "<group>";
+		};
+		040D089621CC969E00E8338B /* Then */ = {
+			isa = PBXGroup;
+			children = (
+				040D089721CC969E00E8338B /* LICENSE */,
+				040D089821CC969E00E8338B /* README.md */,
+				040D089921CC969E00E8338B /* Sources */,
+			);
+			path = Then;
+			sourceTree = "<group>";
+		};
+		040D089921CC969E00E8338B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				040D089A21CC969E00E8338B /* Then */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		040D089A21CC969E00E8338B /* Then */ = {
+			isa = PBXGroup;
+			children = (
+				040D089B21CC969E00E8338B /* Then.swift */,
+			);
+			path = Then;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +180,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040D089D21CC969E00E8338B /* README.md in Resources */,
+				040D089321CC965E00E8338B /* RRPayCell.xib in Resources */,
 				040D088721CC963100E8338B /* LaunchScreen.storyboard in Resources */,
 				040D088421CC963100E8338B /* Assets.xcassets in Resources */,
 				040D088221CC961600E8338B /* Main.storyboard in Resources */,
+				040D089C21CC969E00E8338B /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				040D087F21CC961600E8338B /* ViewController.swift in Sources */,
+				040D089221CC965E00E8338B /* RRPayCell.swift in Sources */,
 				040D087D21CC961600E8338B /* AppDelegate.swift in Sources */,
+				040D089E21CC969E00E8338B /* Then.swift in Sources */,
+				040D089421CC965E00E8338B /* RRPayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,15 +346,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PRWG56G5S8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7S2GYUJ4XQ;
 				INFOPLIST_FILE = PayView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.work.PayView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WildcardCert;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,15 +366,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PRWG56G5S8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7S2GYUJ4XQ;
 				INFOPLIST_FILE = PayView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.work.PayView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WildcardCert;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
